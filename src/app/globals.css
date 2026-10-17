@@ -1,26 +1,123 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    /* Background */
+    --background: #071a1a;
+    --foreground: #efffff;
+
+    /* Surfaces */
+    --card: #0b2424;
+    --card-foreground: #efffff;
+    --popover: #0f2d2d;
+    --popover-foreground: #efffff;
+
+    /* Primary */
+    --primary: #00cac6;
+    --primary-foreground: #071a1a;
+
+    /* Secondary */
+    --secondary: #103333;
+    --secondary-foreground: #cefbfa;
+
+    /* Muted */
+    --muted: #102b2b;
+    --muted-foreground: #8bafaf;
+
+    /* Accent */
+    --accent: #1ae3e0;
+    --accent-foreground: #071a1a;
+
+    /* Borders / inputs */
+    --border: #183f3f;
+    --input: #183f3f;
+    --ring: #32e5e1;
+
+    /* Status */
+    --success: #4ade80;
+    --warning: #facc15;
+    --destructive: #fb7185;
+    --info: #60a5fa;
+
+    /* Secondary brand accent */
+    --warm: #ffb86b;
+    --warm-light: #ffd6a3;
+    --warm-dark: #d98a3a;
+
+    /* Cyan scale */
+    --cyan-50: #dfffff;
+    --cyan-100: #cefbfa;
+    --cyan-200: #a2f4f3;
+    --cyan-300: #73eeeb;
+    --cyan-400: #4de8e5;
+    --cyan-500: #32e5e1;
+    --cyan-600: #1ae3e0;
+    --cyan-700: #00cac6;
+    --cyan-800: #00b4b1;
+    --cyan-900: #009c99;
+
+    /* Radius */
+    --radius: 0.75rem;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+    /* Colors */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+
+    --color-success: var(--success);
+    --color-warning: var(--warning);
+    --color-destructive: var(--destructive);
+    --color-info: var(--info);
+
+    --color-warm: var(--warm);
+    --color-warm-light: var(--warm-light);
+    --color-warm-dark: var(--warm-dark);
+
+    /* Cyan scale */
+    --color-cyan-50: var(--cyan-50);
+    --color-cyan-100: var(--cyan-100);
+    --color-cyan-200: var(--cyan-200);
+    --color-cyan-300: var(--cyan-300);
+    --color-cyan-400: var(--cyan-400);
+    --color-cyan-500: var(--cyan-500);
+    --color-cyan-600: var(--cyan-600);
+    --color-cyan-700: var(--cyan-700);
+    --color-cyan-800: var(--cyan-800);
+    --color-cyan-900: var(--cyan-900);
+
+    /* Fonts */
+    --font-display: var(--font-space-grotesk);
+    --font-body: var(--font-inter);
+    --font-mono: var(--font-jetbrains-mono);
+
+    /* Radius */
+    --radius: var(--radius);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), sans-serif;
 }
