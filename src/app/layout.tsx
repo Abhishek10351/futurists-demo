@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/globals";
+import { Footer, Navbar } from "@/components/globals";
 import type { Metadata } from "next";
 import { Caveat, Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
@@ -39,6 +39,7 @@ export default function RootLayout({
             >
                 <Navbar />
                 {children}
+                <Footer />
             </body>
         </html>
     );
