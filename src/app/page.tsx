@@ -1,8 +1,18 @@
-import {Hero} from "@/components/home";
+import {
+    Contact,
+    Hero,
+    HowWeWork,
+    Services,
+    Work,
+} from "@/components/home";
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
-      <Hero />
-    </main>
-  );
+    return (
+        <main className="min-h-screen">
+            <Hero />
+            <Services />
+            <Work />
+            <HowWeWork />
+            <Contact />
+        </main>
+    );
 }
