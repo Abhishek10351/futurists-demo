@@ -1,4 +1,5 @@
 import { Footer, Navbar } from "@/components/globals";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Caveat, Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
@@ -40,6 +41,7 @@ export default function RootLayout({
                 <Navbar />
                 {children}
                 <Footer />
+                <Analytics />
             </body>
         </html>
     );
