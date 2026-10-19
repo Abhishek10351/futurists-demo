@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import { Inter, JetBrains_Mono, Space_Grotesk, Caveat } from "next/font/google";
+import { Navbar } from "@/components/globals";
 import "./globals.css";
-
 const inter = Inter({
     variable: "--font-inter",
     subsets: ["latin"],
@@ -17,6 +17,12 @@ const jetbrainsMono = JetBrains_Mono({
     subsets: ["latin"],
 });
 
+const caveat = Caveat({
+    variable: "--font-caveat",
+    subsets: ["latin"],
+    weight: ["400", "700"],
+});
+
 export const metadata: Metadata = {
     title: "Futurists",
 };
@@ -29,10 +35,13 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
+                className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${caveat.variable}`}
             >
+                <Navbar />
                 {children}
             </body>
         </html>
     );
 }
+
+
