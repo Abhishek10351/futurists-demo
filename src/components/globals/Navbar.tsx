@@ -7,12 +7,9 @@ const navItems = [
     { label: "Contact", href: "/contact" },
 ];
 
-
-
-
 export default function Navbar() {
     return (
-        <header className="w-full">
+        <header className="w-full fixed bg-surface z-[10]" >
             <div className="mx-auto flex h-20 w-full max-w-[1200px] items-center justify-between px-6 lg:px-12">
                 <Link
                     href="/"
@@ -43,4 +40,3 @@ export default function Navbar() {
         </header>
     );
 }
-
