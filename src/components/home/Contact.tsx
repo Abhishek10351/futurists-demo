@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function Contact() {
     return (
@@ -8,6 +9,14 @@ export default function Contact() {
             className="relative isolate scroll-mt-20 overflow-hidden bg-background px-6 py-32 sm:px-10 lg:px-16 lg:py-44"
         >
             <div className="relative z-10 mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-foreground/20 bg-surface/40 px-6 py-16 sm:px-12 sm:py-24">
+                <BorderBeam
+                    size={140}
+                    duration={10}
+                    colorFrom="#c8f04a"
+                    colorTo="#ff704f"
+                    borderWidth={3}
+                    className="z-20"
+                />
                 <p className="relative font-mono text-xs uppercase tracking-[0.08em] text-primary">
                     Make something happen
                 </p>
